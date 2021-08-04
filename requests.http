@@ -53,10 +53,17 @@ Content-Type: application/json
 GET http://localhost:8080/RestAPIFurb/comandas HTTP/1.1
 Authorization: {{token}}
 
+###
+GET http://localhost:8080/RestAPIFurb/comandas/{comandaId} HTTP/1.1
+Authorization: {{token}}
+
+###
+GET http://localhost:8080/RestAPIFurb/comandas/2838a7b9-7e56-4276-8d17-2551e3b708a4 HTTP/1.1
+Authorization: {{token}}
 
 
 ###
-PUT http://localhost:8080/RestAPIFurb/comandas/{comandaId} HTTP/1.1
+PUT http://localhost:8080/RestAPIFurb/comandas/2838a7b9-7e56-4276-8d17-2551e3b708a4 HTTP/1.1
 Authorization: {{token}}
 Content-Type: application/json
 
@@ -76,5 +83,5 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:8080/RestAPIFurb/comandas/{comandaId} HTTP/1.1
+DELETE http://localhost:8080/RestAPIFurb/comandas/3684dc20-062b-42ad-ad77-10559689f5fb HTTP/1.1
 Authorization: {{token}}
