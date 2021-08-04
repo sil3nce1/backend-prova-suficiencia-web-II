@@ -1,0 +1,80 @@
+
+
+
+POST http://localhost:8080/RestAPIFurb/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Just an example",
+    "telefone": "4799999999",
+    "email": "teste@hotmail.com",
+    "senha": "justatest"
+}
+
+###
+
+POST http://localhost:8080/RestAPIFurb/auth/signIn HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "teste@hotmail.com",
+    "senha": "justatest"
+}
+
+
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQGhvdG1haWwuY29tIiwic2VuaGEiOiIkMmEkMTQkQTdkVXJCU0l1T1c3Z0d3aUNjd0pCT0kvMWNKVXZUMXZNN3ZsSDNKd2RuakpSYjNrZmx4ZjIiLCJpcEFkZHJlc3MiOiI6OmZmZmY6MTI3LjAuMC4xIiwiaWF0IjoxNjI4MDQ0MjkzfQ.hXlV9UTDCccHK-NyZmcwNwEF55C418EH1wwJKBYYDV0
+
+###
+
+GET http://localhost:8080/RestAPIFurb/accounts HTTP/1.1
+Authorization: {{token}}
+
+###
+
+POST http://localhost:8080/RestAPIFurb/comandas HTTP/1.1
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "produtos": [
+        {
+            "nome": "X-Salada",
+            "preco": 100
+        },
+        {
+            "nome": "X-Burger",
+            "preco": 200
+        }
+    ]
+}
+
+###
+GET http://localhost:8080/RestAPIFurb/comandas HTTP/1.1
+Authorization: {{token}}
+
+
+
+###
+PUT http://localhost:8080/RestAPIFurb/comandas/{comandaId} HTTP/1.1
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "produtos": [
+        {
+            "nome": "X-Burger",
+            "preco": 300
+        },
+        {
+            "nome": "X-Bacon",
+            "preco": 400
+        }
+    ]
+}
+
+
+
+###
+DELETE http://localhost:8080/RestAPIFurb/comandas/{comandaId} HTTP/1.1
+Authorization: {{token}}
