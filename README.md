@@ -20,4 +20,4 @@
 - Database used: PostgreSQL
 - DB configuration file: ormconfig.json
 - File to import in database: db
-- Queries for database: queries.txt
+- Database queries: queries.txt
