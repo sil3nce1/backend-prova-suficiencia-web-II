@@ -4,7 +4,7 @@
 - Arquivo requests.http contém modelos para request, necessário possuir REST Client no VS Code.
 - Linguagem utilizada: NodeJS + TypeScript.
 - ORM utilizado: TypeORM
-- Autenticação: Usado JWT Token, payload contém email, senha, ipAddress (por motivo de segurança).
+- Autenticação: Usado JWT Token, payload contém email, senha, ipAddress (por motivos de segurança).
 - Banco de dados: PostgreSQL
 - Arquivo para importar no banco: db
 - Queries para o banco de dados: queries.txt.
