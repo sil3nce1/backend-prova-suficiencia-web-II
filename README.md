@@ -7,6 +7,7 @@
 - ORM utilizado: TypeORM
 - Autenticação: Usado JWT Token, payload contém email, senha, ipAddress (por motivos de segurança).
 - Banco de dados: PostgreSQL
+- Algoritmo de encriptação de senha: BCrypt (SALT: 14)
 - Arquivo de configuração do banco: ormconfig.json
 - Arquivo para importar no banco: db
 - Queries para o banco de dados: queries.txt.
@@ -20,6 +21,7 @@ OBS: http://localhost:8080/api-docs para documentação Swagger.
 - ORM used: TypeORM.
 - Authentication: JWT Token, payload contains email, senha, ipAddress (for security reasons).
 - Database used: PostgreSQL
+- Password encryption algorithm: BCrypt (SALT: 14)
 - DB configuration file: ormconfig.json
 - File to import in database: db
 - Database queries: queries.txt
