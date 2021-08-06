@@ -12,3 +12,7 @@ export async function generateValidModelId<T>(model: EntityTarget<T>): Promise<s
     }
     return id;
 }
+
+export function hasOnlyDigits(data: string): boolean {
+    return /^\d+$/.test(data);
+}
