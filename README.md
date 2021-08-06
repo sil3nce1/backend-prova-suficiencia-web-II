@@ -11,6 +11,8 @@
 - Arquivo para importar no banco: db
 - Queries para o banco de dados: queries.txt.
 
+OBS: http://localhost:8080/api-docs para documentação Swagger.
+
 [ENG]
 - Run npm install on shell.
 - requests.http file contains request models, needs REST Client on VS Code.
@@ -21,3 +23,5 @@
 - DB configuration file: ormconfig.json
 - File to import in database: db
 - Database queries: queries.txt
+
+PS: http://localhost:8080/api-docs for Swagger Documentation.
